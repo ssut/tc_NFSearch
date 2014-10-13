@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="1.0">
+    <title xml:lang="ko">NFSearch</title>
+    <title xml:lang="en">NFSearch</title>
+    <link>http://b.ssut.me/</link>
+    <version>1.0</version>
+    <description xml:lang="ko"><![CDATA[방문자가 검색 엔진을 통해 들어왔는데 글이 없다면 검색 페이지로 넘겨줍니다.]]></description>
+    <description xml:lang="en"><![CDATA[Redirect to search page when user access from search engine and article not found.]]></description>
+    <license>MIT</license>
+    <author xml:lang="ko" link="http://b.ssut.me">ssut</author>
+    <safety changeData="no" exposeData="no" accessLocal="no" accessRemote="no" accessRaw="no" />
+    <requirements>
+        <textcube>1.09</textcube>
+    </requirements>
+    <binding>
+        <tag name="SKIN_head_end" handler="NFSearch_handler" />
+    </binding>
+</plugin>
