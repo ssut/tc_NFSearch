@@ -32,13 +32,15 @@ function extract_keyword($ref) {
     parse_str($fixed_ref, $output);
 
     $list = array(
-        'q', 'query', 'k', 'keyword', 'search', 'stext', 'oq', 'nlia', 'aqa', 'wd', 'p');
+        'q', 'query', 'k', 'keyword', 'search',
+        'stext', 'oq', 'nlia', 'aqa', 'wd', 'p');
     foreach($list as $key) {
         if(array_key_exists($key, $output) !== false) {
             $keyword = $output[$key];
             break;
         }
     }
+    unset($list);
 
     if(empty($keyword) &&
        preg_match('@/search/(?:\w+/)*([^/?]+)@i', $ref, $matches)) {
