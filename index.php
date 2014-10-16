@@ -4,7 +4,7 @@ function NFSearch_handler($target) {
 
     $context = Model_Context::getInstance();
 
-    $referrer = $_SERVER['HTTP_REFERER'];
+    $referrer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
     $host = $_SERVER['HTTP_HOST'];
 
     // when visitor access from search engine and entry is not found

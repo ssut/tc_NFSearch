@@ -3,7 +3,7 @@
     <title xml:lang="ko">NFSearch</title>
     <title xml:lang="en">NFSearch</title>
     <link>http://b.ssut.me/</link>
-    <version>1.0</version>
+    <version>1.0-1</version>
     <description xml:lang="ko"><![CDATA[방문자가 검색 엔진을 통해 들어왔는데 글이 없다면 검색 페이지로 넘겨줍니다.]]></description>
     <description xml:lang="en"><![CDATA[Redirect to search page when user access from search engine and article not found.]]></description>
     <license>MIT</license>
